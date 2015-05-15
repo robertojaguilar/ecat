@@ -12,7 +12,7 @@ Transmisor
 * GPS: ADAFRUIT ULTIMATE GPS BREAKOUT - https://www.adafruit.com/products/746
 
 Receiver
-*Controller: Arduino Uno - http://www.arduino.cc/en/Main/ArduinoBoardUno
+* Controller: Arduino Uno - http://www.arduino.cc/en/Main/ArduinoBoardUno
 
 License
 =======
