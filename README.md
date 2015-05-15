@@ -23,14 +23,14 @@ Receiver
 
 As root execute the following lines:
 
-$ apt-get install update
-$ apt-get install upgrade
-$ apt-get install $(cat dependencies.txt)
-$ pip install -r requirements.txt
-$ reboot
-$ ./setup.sh
+------
 
-
+    $ apt-get install update
+    $ apt-get install upgrade
+    $ apt-get install $(cat dependencies.txt)
+    $ pip install -r requirements.txt
+    $ reboot
+    $ ./setup.sh
 
 # License
 Pygram uses the [MIT](http://opensource.org/licenses/MIT) license.
