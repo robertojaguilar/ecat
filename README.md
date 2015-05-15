@@ -32,6 +32,14 @@ As root execute the following lines:
     $ reboot
     $ ./setup.sh
 
+# References
+
+* https://learn.adafruit.com/downloads/pdf/using-the-bmp085-with-raspberry-pi.pdf
+* http://blog.initialstate.com/beaglebone-black-gps-mobile/
+* http://randymxj.com/?p=491
+* http://andrewdai.co/beaglecar/sensors-and-interfaces.html
+
+
 # License
 Pygram uses the [MIT](http://opensource.org/licenses/MIT) license.
 The dependencies used by Pygram are subject to their respective licenses.
