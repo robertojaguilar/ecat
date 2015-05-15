@@ -7,6 +7,7 @@ from datetime import datetime
 sys.path.insert(0, './libraries')
 from Adafruit_HMC6352 import HMC6352
 
+line = "0.0\n"
 gyroPin = 'P9_35'
 accelXPin = 'P9_36'
 accelYPin = 'P9_38'
@@ -23,6 +24,8 @@ def setup():
 
 
 def loop():
+	global line
+	line = ""
 	getTime()
 	getHeading()
 	getGyro()
@@ -30,40 +33,48 @@ def loop():
 	getAccel("P9_38")
 	getAccel("P9_40")
 	getAltitude()
-	print "."
+	getTemp()
+	print "*"
+	f.write(line)
 
 def getTime():
+	global line
 	now = datetime.now()
-	storeData(now.year, "; ")
-	storeData(now.month, "; ")
-	storeData(now.day, "; ")
-	storeData(now.hour, "; ")
-	storeData(now.minute, "; ")
-	storeData(now.second, "; ")
-
+	line += str(now.year)+"; "
+	line += str(now.month)+"; "
+	line += str(now.day)+"; "
+	line += str(now.hour)+"; "
+	line += str(now.minute)+"; "
+	line += str(now.second)+"; "
 
 def getHeading():
+	global line
 	value = hmc.readData()
-	storeData(value, "; ")
-
+	line += str(value)+"; "
 
 def getGyro():
+	global line
 	value = ADC.read(gyroPin)
-	storeData(value, "; ")
+	line += str(value)+"; "
 
 def getAccel(axis):
+	global line
 	zeroOffset = 0.4584
 	conversionFactor = 0.0917
 	rawRead = ADC.read(axis)
 	value = (rawRead - zeroOffset) / conversionFactor
-	storeData(value, "; ")
+	line += str(value)+"; "
 
 def getAltitude():
+	global line
 	value = bmp.read_altitude()
-	storeData(value, "\n")
+	line += str(value)+"; "
 
-def storeData(data, chr):
-	f.write(str(data)+chr)
+def getTemp():
+	global line
+	value = bmp.read_temperature()
+	line += str(value)+"\n"
+
 setup()
 while True:
 	loop()
