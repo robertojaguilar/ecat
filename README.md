@@ -5,10 +5,10 @@ ECAT is an embedded system controlled by a Beaglebone Black which measures atmos
 
 # Devices
 
-Controller: Beaglebone Black - http://beagleboard.org/BLACK
-Barometer: BMP180 - http://www.adafruit.com/products/1603
-Compass: HMC6352 - https://www.sparkfun.com/products/retired/7915
-Gyroscope: LISY300AL - https://www.sparkfun.com/products/retired/8955
-Accelerometer: ADXL335 - https://www.sparkfun.com/products/9269
-GPS: ADAFRUIT ULTIMATE GPS BREAKOUT - https://www.adafruit.com/products/746
+* Controller: Beaglebone Black - http://beagleboard.org/BLACK
+* Barometer: BMP180 - http://www.adafruit.com/products/1603
+* Compass: HMC6352 - https://www.sparkfun.com/products/retired/7915
+* Gyroscope: LISY300AL - https://www.sparkfun.com/products/retired/8955
+* Accelerometer: ADXL335 - https://www.sparkfun.com/products/9269
+* GPS: ADAFRUIT ULTIMATE GPS BREAKOUT - https://www.adafruit.com/products/746
 
