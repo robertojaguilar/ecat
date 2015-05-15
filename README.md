@@ -1,10 +1,10 @@
-# Embedded Complex Acquirer and Transmisor - ecat
+# Embedded Complex Acquirer and Transmitter - ecat
 
 ECAT is an embedded system controlled by a Beaglebone Black which measures atmospheric variables from different devices transmitting the data in real time to a computer.
 
 # Devices
 
-Transmisor
+Transmitter
 ------------
 
 * Controller: Beaglebone Black - http://beagleboard.org/BLACK
