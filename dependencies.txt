@@ -1,0 +1,6 @@
+build-essential
+python-dev
+python-smbus
+python-dev python-setuptools python-pip python-smbus -y
+linux-image-3.8.13-bone68
+gpsd gpsd-clients python-gps
